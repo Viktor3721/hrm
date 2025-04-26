@@ -24,8 +24,8 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git url: 'EVERYONE WILL PUT THEIR OWN URL',
-                credentialsId: 'YOURGITHUBPAT-ID-ONJENKINS'
+                git url: 'https://github.com/Viktor3721/hrm.git',
+                credentialsId: 'Viktor-PAT'
             }
         }
         stage('UI Tests'){
