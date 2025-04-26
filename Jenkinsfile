@@ -25,6 +25,7 @@ pipeline{
         stage('Checkout'){
             steps{
                 git url: 'https://github.com/Viktor3721/hrm.git',
+                    branch: 'main',
                 credentialsId: 'Viktor-PAT'
             }
         }
